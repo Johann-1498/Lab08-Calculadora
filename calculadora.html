@@ -3,9 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CALCULADORA</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+        <title>MI CALCULADORA</title>
     </head>
     <body>
-
+        <section class="contenido">
+            <h1>CALCULADORA</h1>
+            <i class='bx bxs-calculator'></i>
+            <form action="../cgi-bin/resultado.pl" method="post">
+                <div class="calculadora">
+                    <input type="text" name="operacion"
+                        placeholder="Ingresa operacion">
+                    <input type="submit" value="calcular">
+                </div>
+            </form>
+        </section>
     </body>
 </html>
